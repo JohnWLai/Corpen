@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Corpen Real Estate Group</title>
+  <link rel="stylesheet" href="Corpen.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/ehp7lhx.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-container">
+    <div class="hero-image-and-gradients">
+      <img class="hero-image" src="images/hero.png" alt="San Francisco Skyline" />
+      <div id="gradient-day" class="gradient-1"></div>
+      <div id="gradient-night" class="gradient-2"></div>
+    </div>
+    <header class="header-container">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="Corpen Logo" />
+      </div>
+      <nav class="nav-container">
+        <ul class="navigation">
+          <li class="nav-items"><a href="#about-us">About us</a></li>
+          <li class="nav-items"><a href="#our-team">Our team</a></li>
+          <li class="nav-items"><a href="#residential">Residential</a></li>
+          <li class="nav-items"><a href="#commercial">Commercial</a></li>
+          <li class="nav-items" id="contactUsButton"><a href="#"><span class=bold>Contact us</span></a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div id="contactModal" class="modal-hidden">
+    <!-- The Modal -->
+    <div class="modal-container">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-top">
+          <h2>Let's Explore All Possibilities Together.</h2>
+          <button id="xButton" class="close-button">x</button>
+        </div>
+        <form method="post" id="reused_form">
+          <label for="name">Your Name:</label>
+          </br>
+          <input id="name" type="text" name="Name" required maxlength="50">
+          </br>
+          <label for="email">Email Address:</label>
+          </br>
+          <input id="email" type="email" name="Email" required maxlength="50">
+          </br>
+          <label for="message">Message:</label>
+          </br>
+          <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+          </br>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+        <div class="modal-validation" id="success_message" style="display:none">
+          <h3>Submitted the form successfully!</h3>
+          <p>
+            We will get back to you soon.
+          </p>
+        </div>
+        <div class="modal-validation" id="error_message" style="width:100%; height:100%; display:none; ">
+          <h3>Error</h3>
+          Sorry there was an error sending your form.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about-us" class="about-us-container">
+    <div class="about-us-h2">
+      <h2>The modern Corpen method for the best honest results. 
+        </br> We get it.
+      </h2>
+    </div>
+    <div class="about-us-copy">
+      <h3>About Us</h3>
+      <p>Corpen Real Estate Group is an independent real estate brokerage navigating the California market. We take a personalized approach to buying, selling, and leasing any type of residential, commercial, or investment property throughout the state. We build our reputation on what matters: honesty, integrity, and <span class="teal"> results</span>.
+        </br>
+        </br>
+        Our real estate professionals have more than 20 years of experience in the industry. Our team reflects what makes our communities so unique. With diverse backgrounds in law, technology, design, education, and life sciences, our ability to connect with the people that drive every region's success is unparalleled. We understand what it truly means to <span class="teal">live</span> in our communities.
+      </p>
+    </div>
+  </div>
+  <div class="dividers">
+    <img class="divider-pics" src="images/building-1.png" alt="Buildings in SF" />
+  </div>
+  <div id="our-team" class="our-team-container">
+    <div class="meet-the-team">
+      <h2>Meet the Team</h2>
+    </div>
+    <div class="leadership">
+      <h3>Leadership</h3>
+      <p>
+        <span class="teal">Edward Ong</span>
+        </br>​Principal | Broker | Attorney
+        </br>CalBRE #01925421
+        </br>edward@corpen.group
+        </br>(408) 571-9626
+      </p>
+    </div>
+    <div class="the-team">
+      <h3>The Team</h3>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Tiffany Bacon</span>
+        ​</br>Associate | Attorney
+        </br>CalBRE #02032353
+        </br>tiffany@corpen.group
+        </br>(951) 333-7398
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Leila Moshref-Danesh</span>
+        </br>Realtor | Associate | Attorney
+        </br>CalBRE #01923844
+        </br>leila@corpen.group
+        </br>(951) 382-0311
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Scott Hayano</span>
+        </br>Realtor | Associate
+        </br>CalBRE #01996043
+        </br>scott@corpen.group
+        </br>(925) 209-7514
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Tuan Ong</span>
+        </br>Realtor | Associate
+        </br>CalBRE #01031097
+        </br>tuan@corpen.group
+        </br>(408) 887-4168
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Shaun Johns</span>
+        </br>Associate
+        </br>CalBRE #01999638
+        </br>shaun@corpen.group
+        </br>(916) 719-7994
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Crystal Roberts</span>
+        </br>Realtor | Associate | Attorney
+        </br>CalBRE #02025094
+        </br>crystal@corpen.group
+        </br>(415) 993-0618
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Elaine Lau</span>
+        </br>Realtor | Associate
+        </br>CalBRE #01863891
+        </br>elaine@corpen.group
+        </br>(626) 320-4505
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Kees t'Sas</span>
+        </br>Associate
+        </br>CalBRE #01963880
+        </br>kees@corpen.group
+        </br>(805) 729-5965
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Sarah Lockrem</span>
+        </br>Realtor | Associate
+        </br>CalBRE #02042831
+        </br>sarah@corpen.group
+        </br>(805) 729-5965
+      </p>
+    </div>
+    <div class="box">
+      <p>
+        <span class="teal">Leon Townsend</span>
+        </br>Realtor | Associate
+        </br>CalBRE #01979416
+        </br>leon@corpen.group
+        </br>(626) 372-9374
+      </p>
+    </div>
+    <div class="our-support">
+      <h3>Our Support Team</h3>
+    </div>
+    <div class="box-2">
+      <p>
+        <span class="teal">Hana Ha </span>
+        </br>Sr. Transaction Coordinator
+        </br>hana@corpen.group
+        </br>(805) 720-3642
+      </p>
+    </div>
+    <div class="box-3">
+      <p>
+        <span class="teal">Daniela Santana </span>
+        </br>Sr. Transaction Coordinator
+        </br>tc@corpen.group
+        </br>(888) 279-4330
+      </p>
+    </div>
+  </div>
+  <div class="dividers">
+    <img class="divider-pics" src="images/building-2.png" alt="Another Building in SF" />
+  </div>
+  <div id="residential" class="residential-container">
+    <div class="residential-title">
+      <h2>Our Residential Practice</h2>
+    </div>
+    <div class="residential-copy">
+      <p>
+        Corpen Real Estate Group is proud to take a personal, results-driven approach to buying and selling residential real estate. As an independent brokerage, our clients get the most out of our extensive network and resources to leverage traditional and innovative strategies to meet the needs of our buyers and sellers.
+      </p>
+    </div>
+    <div class="buyer-rep">
+      <h3>Buyer Representation</h3>
+      <p>
+        Our active buyer representation services are specifically designed to help you
+        understand the home buying process, analyze key market insights, and identify
+        properties that will ultimately become a home you’ll love.
+        <ul>
+          <li>
+            <span class="teal">Information:</span> We’ll use our multiple listings systems and networks to provide you wtih access to every property in any regional market.
+          </li>
+          <li>
+            <span class="teal">Education:</span> We’ll be there with you through every step of the process, from defining the search to deciding on the perfect home.
+          </li>
+          <li>
+            <span class="teal">Negotiation:</span> We’ll make every effort to negotiate the best value for you from offer to final closing.
+          </li>
+        </ul>
+      </p>
+    </div>
+    <div class="seller-rep">
+      <h3>Seller Representation</h3>
+      <p>
+        When you’re ready to sell, our seller representation services optimize pricing,
+        marketing, and related professional services to drive a personalized go-to-market
+        strategy that ensures the process is successful.
+        <ul>
+          <li>
+            <span class="teal">Evaluation:</span> We’ll survey the entire market and analyze all available information to price the property accurately and intelligently.
+          </li>
+          <li>
+            <span class="teal">Coordination:</span> We’ll handle the marketing campaigns to achieve the highest price possible in the shortest amount of time.
+          </li>
+          <li>
+            <span class="teal">Champion:</span> We’ll do everything we can to advocate for you and your best interests throughout the process.
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div class="dividers">
+    <img class="divider-pics" src="images/building-3.png" alt="More Buildings in SF" />
+  </div>
+  <div id="commercial" class="commercial-container">
+    <div class="commercial-container-title">
+      <h2>Our Commercial Practice</h2>
+    </div>
+    <div class="commercial-copy">
+      <p>
+        Corpen Real Estate Group's commitment to the well-being of the region includes our commercial real estate services to a variety of businesses. Our clients are investors, entrepreneurs, restauranteurs, small business owners, and well-established companies that want to contribute to California's vibrant economy. With our team's business experience and instincts in mind, our commercial practice is focused on thoroughly understanding a client's needs to make every transaction a success.
+      </p>
+    </div>
+    <div class="commercial-topic-container">
+      <div class="topic">
+        <h3>
+          Targeted Search
+        </h3>
+        <p>
+          We listen to our clients and understand their goals and objectives to exhaustively search for the right properties to further their interests. ​
+        </p>
+      </div>
+      <div class="topic">
+        <h3>
+          Business Strategy
+        </h3>
+        <p>
+          We help evaluate the potential and fit of various commercial properties as personal and business investments for the short and long term.
+        </p>
+      </div>
+      <div class="topic">
+        <h3>
+          Active Negotiation
+        </h3>
+        <p>
+          ​We look to secure the best contractual terms for our clients from the real estate perspective, given their business and other financial considerations.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <nav class="nav-footer-container">
+      <ul class="navigation-footer-list">
+        <li class="footer-nav-items"><a href="#">private policy</a></li>
+        <li class="footer-nav-items"><a href="#">term of use</a></li>
+        <li class="footer-nav-items"><a href="#">fair housing act</a></li>
+      </ul>
+    </nav>
+    <div class="copyright">
+      <p>Copyright © Corpen Real Estate Group 2019. All Rights Reserved. CaBRE #02010273.</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="Corpen.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
